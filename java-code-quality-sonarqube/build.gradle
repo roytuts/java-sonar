@@ -1,0 +1,27 @@
+plugins {
+    id 'java-library'
+    id 'org.sonarqube' version "3.0"
+}
+
+test {
+    ignoreFailures = true
+}
+
+sonarqube {
+    properties {
+        property "sonar.projectName", "${project.name}"
+        property "sonar.projectKey", "${project.group}:${project.name}"
+    }
+}
+
+sourceCompatibility = 12
+targetCompatibility = 12
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+	testImplementation 'org.junit.jupiter:junit-jupiter-engine:5.5.2'
+	testImplementation 'org.junit.platform:junit-platform-engine:1.6.2'
+}
