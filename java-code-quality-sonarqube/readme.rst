@@ -1,1 +1,1 @@
-You can go through the tutorial https://www.roytuts.com/analyze-code-quality-of-java-application-using-sonarqube/
+Please follow the tutorial https://roytuts.com/analyze-code-quality-of-java-application-using-sonarqube/
